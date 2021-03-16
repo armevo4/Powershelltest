@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000005
+"ConsentPromptBehaviorUser"=dword:00000003
+"EnableInstallerDetection"=dword:00000001
+"EnableLUA"=dword:00000001
+"EnableVirtualization"=dword:00000001
+"PromptOnSecureDesktop"=dword:00000000
+"ValidateAdminCodeSignatures"=dword:00000000
+"FilterAdministratorToken"=dword:00000000
+
+
+Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System | Out-File -FilePath C:\Users\am001169\Music\Powershell-learning\test.txt -Append
+Set-Content "Next Command" | Out-File -FilePath C:\Users\am001169\Music\Powershell-learning\test.txt -Append
